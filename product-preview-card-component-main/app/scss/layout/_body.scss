@@ -1,0 +1,23 @@
+@use '../base' as *;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $font-primary;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(157, 240, 233)
+}
+
+//Footer
+.attribution {
+  padding-top: 5px;
+
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(221, 219, 230);
+}
