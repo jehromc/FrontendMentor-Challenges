@@ -1,3 +1,26 @@
+@use '../abstracts/' as *;
+
 .card {
-  padding: 1rem;
+  margin: 1rem;
+  background-color: $clr-neutral-white;
+  border-radius: 0.4rem;
+  &__img {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+  &__title {
+    font-family: $ff-primary;
+    font-weight: 700;
+  }
+  &__text {
+    font-family: $ff-secondary;
+    font-weight: 500;
+  }
+  &__description {
+    font-family: $ff-secondary;
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+  &__body {
+    padding: 1rem;
+  }
 }

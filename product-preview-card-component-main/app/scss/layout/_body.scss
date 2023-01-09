@@ -1,14 +1,14 @@
-@use '../base' as *;
+@use '../abstracts/' as *;
 
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: $font-primary;
+  font-size: 0.875rem;
   display: grid;
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  background-color: rgb(157, 240, 233)
+  background-color: $clr-primary-cream;
 }
 
 //Footer
