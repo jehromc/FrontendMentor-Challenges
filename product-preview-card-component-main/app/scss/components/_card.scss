@@ -5,14 +5,11 @@
   background-color: $clr-neutral-white;
   border-radius: 0.8rem;
   max-width: 40rem;
+  min-width: 20rem;
   @include media-query(large) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // justify-content: center;
-    //align-items: center;
     gap: 1rem;
-
-    //max-height: 38rem;
   }
   &__header {
     display: flex;
@@ -55,6 +52,7 @@
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2rem;
+    color: $clr-neutral-dark-blue;
     @include media-query(large) {
       font-size: 2rem;
     }
@@ -64,11 +62,13 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+    color: $clr-neutral-grayish-blue;
   }
   &__description {
     font-family: $ff-secondary;
     font-weight: 500;
     padding: 1rem 0;
+    color: $clr-neutral-grayish-blue;
     @include media-query(large) {
       font-size: 1rem;
     }
@@ -87,6 +87,7 @@
       font-family: $ff-secondary;
       text-decoration: line-through;
       margin-left: 1rem;
+      color: $clr-neutral-grayish-blue;
     }
   }
   &__button {
@@ -104,21 +105,8 @@
     gap: 0.5rem;
     @include media-query(large) {
     }
-    &__text{
+    &__text {
       display: block;
     }
-
-    // &__icon {
-    //   padding: 0 0.8rem;
-    //   @include media-query(large) {
-    //     padding: 0;
-    //   }
-    // }
-    // &__text {
-    //   padding: 0 0.8rem;
-    //   @include media-query(large) {
-    //     padding-right: 0.5rem;
-    //   }
-    // }
   }
 }

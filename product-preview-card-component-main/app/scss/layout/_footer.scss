@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+// footer {
+//   & a:hover {
+//     color: red;
+//   }
+//   & a:active {
+//     color: $clr-neutral-dark-blue;
+//   }
+// }
+.attribution a {
+  color: $clr-primary-cyan;
+  &:hover {
+    color: $clr-neutral-dark-blue;
+  }
+}
