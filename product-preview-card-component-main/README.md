@@ -31,6 +31,8 @@ Users should be able to:
 
 ![](./design/desktop.png)  
 Preview on Desktop.  <br /> 
+<br /> 
+<br /> 
 ![](./design/mobile.png)  
 Preview on Mobile.   <br />
 
