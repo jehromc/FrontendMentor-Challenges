@@ -29,15 +29,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./product-preview-card-component-main/design/desktop.png)
-Preview on Desktop.
-![](./product-preview-card-component-main\design\mobile.png)
-Preview on Mobile.
+![](./design/desktop.png)  
+Preview on Desktop. <br />
+<br />
+<br />
+![](./design/mobile.png)  
+Preview on Mobile. <br />
 
 ### Links
 
-- Solution URL: [https://github.com/jehromc/FrontendMentor-Challenges/tree/main/product-preview-card-component-main](https://github.com)
-- Live Site URL: [https://magical-kitsune-69735c.netlify.app/product-preview-card-component-main/index.html](https://magical-kitsune-69735c.netlify.app)
+- Solution URL: [https://github.com](https://github.com/jehromc/FrontendMentor-Challenges/tree/main/product-preview-card-component-main)
+- Live Site URL: [https://magical-kitsune-69735c.netlify.app](https://magical-kitsune-69735c.netlify.app/product-preview-card-component-main/index.html)
 
 ## My process
 
@@ -67,7 +69,7 @@ This is other options to shows image when screen is change:
 </picture>
 ```
 
-This will  include the nested folder in npm run  build:
+This will include the nested folder in npm run build:
 
 ```js
 import { resolve } from 'path';
@@ -92,7 +94,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-I wanted to learn more about vite js especially how it work in the hood. For now, I just barely scratch the surface.   
+I wanted to learn more about vite js especially how it work in the hood. For now, I just barely scratch the surface.  
 I wanted to explore on Semantics approach and the Accessibility of the website
 
 ### Useful resources
