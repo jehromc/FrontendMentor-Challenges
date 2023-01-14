@@ -41,8 +41,8 @@ Preview on Mobile.   <br />
 
 ### Links
 
-- Solution URL: [https://github.com/jehromc/FrontendMentor-Challenges/tree/main/product-preview-card-component-main](https://github.com)
-- Live Site URL: [https://magical-kitsune-69735c.netlify.app/product-preview-card-component-main/index.html](https://magical-kitsune-69735c.netlify.app)
+- Solution URL: [https://github.com](https://github.com/jehromc/FrontendMentor-Challenges/tree/main/product-preview-card-component-main)
+- Live Site URL: [https://magical-kitsune-69735c.netlify.app](https://magical-kitsune-69735c.netlify.app/product-preview-card-component-main/index.html)
 
 ## My process
 
