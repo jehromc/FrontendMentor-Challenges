@@ -30,9 +30,9 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/desktop.png)  
-Preview on Desktop.  
+Preview on Desktop.  <br /> 
 ![](./design/mobile.png)  
-Preview on Mobile.  
+Preview on Mobile.   <br />
 
 
 
