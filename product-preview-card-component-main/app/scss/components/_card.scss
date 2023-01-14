@@ -103,6 +103,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    &:hover {
+      background-color: darken($clr-primary-cyan, 15%);
+      cursor: pointer;
+    }
     @include media-query(large) {
     }
     &__text {

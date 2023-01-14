@@ -26,50 +26,63 @@
     </style>
   </head>
   <body>
-    <main>
-      <section class="card">
-        <section class="card__header">
-          <img
-            class="card__img__mobile"
-            src=".\images\image-product-mobile.jpg"
-            alt="picture"
+    <main class="card">
+      <div class="card__header">
+        <!-- <picture> can be use as well to automatically  change image-->
+        <!-- <picture>
+          <source
+            media="(min-width: 616px)"
+            srcset="images\image-product-desktop.jpg"
           />
+          <img src="images/image-product-mobile.jpg" alt="bottle of cologne" />
+        </picture> -->
+        <img
+          class="card__img__mobile"
+          src=".\images\image-product-mobile.jpg"
+          alt="bottle of cologne"
+        />
+        <img
+          class="card__img__desktop"
+          src=".\images\image-product-desktop.jpg"
+          alt="bottle of cologne"
+        />
+      </div>
+      <div class="card__body">
+        <span class="card__text">Perfume</span>
+        <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="card__price">
+          <span class="card__price__discounted"><strong>$149.99</strong> </span
+          ><span class="card__price__orig"> $169.99</span>
+        </div>
+        <button class="card__button">
           <img
-            class="card__img__desktop"
-            src=".\images\image-product-desktop.jpg"
-            alt="picture"
+            class="card__button__icon"
+            src="./images/icon-cart.svg"
+            alt="add button"
           />
-        </section>
-        <section class="card__body">
-          <span class="card__text">Perfume</span>
-          <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
-          <p class="card__description">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="card__price">
-            <span class="card__price__discounted"
-              ><strong>$149.99</strong> </span
-            ><span class="card__price__orig"> $169.99</span>
-          </div>
-          <button class="card__button">
-            <img
-              class="card__button__icon"
-              src="./images/icon-cart.svg"
-              alt="add button"
-            />
-            <span class="card__button__text">Add to Cart</span>
-          </button>
-        </section>
-      </section>
+          <span class="card__button__text">Add to Cart</span>
+        </button>
+      </div>
     </main>
 
     <footer>
       <div class="attribution">
         Challenge by
-        <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#"  class="attribution__name">Jehrom C.</a>.
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/jehromc"
+          class="attribution__name"
+          >Jehrom C.</a
+        >.
       </div>
     </footer>
     <script type="module" src="./app/js/main.js"></script>

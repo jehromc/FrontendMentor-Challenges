@@ -1,6 +1,6 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,9 +16,9 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
-This is  my first solution for the FEM challenge.
+
+This is my first solution for the FEM challenge.
 
 ### The challenge
 
@@ -29,13 +29,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./product-preview-card-component-main\design\desktop.png)
+![](./product-preview-card-component-main/design/desktop.png)
 Preview on Desktop.
 ![](./product-preview-card-component-main\design\mobile.png)
 Preview on Mobile.
-
-
-
 
 ### Links
 
@@ -52,50 +49,59 @@ Preview on Mobile.
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Vitejs](https://vitejs.dev/) - Frontend  Tool
+- [Vitejs](https://vitejs.dev/) - Frontend Tool
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+My learnings in this challenge
 
-To see how you can add code snippets, see below:
+This is other options to shows image when screen is change:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+  <source
+    media="(min-width: 616px)"
+    srcset="images\image-product-desktop.jpg"
+  />
+  <img src="images/image-product-mobile.jpg" alt="bottle of cologne" />
+</picture>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+This will  include the nested folder in npm run  build:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        nested: resolve(
+          __dirname,
+          'product-preview-card-component-main/index.html'
+        ),
+      },
+    },
+  },
+});
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I wanted to learn more about vite js especially how it work in the hood. For now, I just barely scratch the surface.   
+I wanted to explore on Semantics approach and the Accessibility of the website
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-
+- [Solution by vcarames in FEM](https://www.frontendmentor.io/solutions/product-preview-card-component-za4kCCWY0P) - This help in structuring your code and using <picture> to change image.
 
 ## Author
 
 - Frontend Mentor - [@jehromc](https://www.frontendmentor.io/profile/jehromc)
-
-
 
 ## Acknowledgments
 
