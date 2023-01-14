@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./product-preview-card-component-main\design\desktop.png)
+![](./design/desktop.png)
 Preview on Desktop.
 ![](./product-preview-card-component-main\design\mobile.png)
 Preview on Mobile.
@@ -48,7 +48,6 @@ Preview on Mobile.
 
 - Semantic HTML5 markup
 - Sass
-- Vite js
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
