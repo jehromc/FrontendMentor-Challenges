@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+// ## Colors
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+$clr-dark-blue: hsl(218, 44%, 22%);
+$clr-grayish-blue: hsl(220, 15%, 55%);
+$clr-light-gray: hsl(212, 45%, 89%);
+$clr-neutral-white: hsl(0, 0%, 100%);
+
+$ff-primary: 'Fraunces', serif;
+$ff-secondary: 'Montserrat', sans-serif;
+$ff-output: 'Output', sans-serif;
+// - White: hsl(0, 0%, 100%)
+// - Light gray: hsl(212, 45%, 89%)
+// - Grayish blue: hsl(220, 15%, 55%)
+// - Dark blue: hsl(218, 44%, 22%)
+
+$breakpoints: (
+  large: 900px,
+);

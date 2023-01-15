@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 0.875rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr-light-gray;
+  font-family: $ff-output;
+}
+
+//Footer
+.attribution {
+  padding-top: 5px;
+
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(221, 219, 230);
+}
