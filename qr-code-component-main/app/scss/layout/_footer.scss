@@ -1,8 +1,8 @@
-// @use '../abstracts/' as *;
+@use '../abstracts/' as *;
 
-// .attribution a {
-//   color: $clr-primary-cyan;
-//   &:hover {
-//     color: $clr-neutral-dark-blue;
-//   }
-// }
+.attribution a {
+  color: $clr-grayish-blue;
+  &:hover {
+    color: $clr-dark-blue;
+  }
+}
