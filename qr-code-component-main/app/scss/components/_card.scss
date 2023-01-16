@@ -32,19 +32,21 @@
 
   &__title {
     text-align: center;
-    font-weight: 700;
+
     padding: 0 1rem;
     color: $clr-dark-blue;
+    font-weight: 700;
     font-size: clamp(1.2rem, 1.5vw, 1.5rem);
     @include media-query(large) {
       padding: 0;
+      font-weight: 700;
     }
   }
   &__description {
     text-align: center;
     margin: 1rem;
     font-weight: 400;
-    padding:0 .5rem;
+    padding: 0 0.5rem;
     color: $clr-grayish-blue;
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     @include media-query(large) {
