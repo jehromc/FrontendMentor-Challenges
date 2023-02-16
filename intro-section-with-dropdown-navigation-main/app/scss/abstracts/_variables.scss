@@ -1,18 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
-
-
-// ### Primary
-
-$clr-primary-cyan: hsl(158, 36%, 37%);
-$clr-primary-cream: hsl(30, 38%, 92%);
-
-// ### Neutral
-
-$clr-neutral-dark-blue: hsl(212, 21%, 14%);
-$clr-neutral-grayish-blue: hsl(228, 12%, 48%);
-$clr-neutral-white: hsl(0, 0%, 100%);
-
-$ff-primary: 'Epilogue', sans-serif;
+$clr-almost-White: hsl(0, 0%, 98%);
+$clr-gray-medium: hsl(0, 0%, 41%);
+$clr-almost-black: hsl(0, 0%, 8%);
 $breakpoints: (
   large: 900px,
 );

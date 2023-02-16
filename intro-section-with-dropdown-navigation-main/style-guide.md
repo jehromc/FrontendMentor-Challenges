@@ -28,3 +28,8 @@ The designs were created to the following widths:
 ## <style>
   @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 </style>
+
+### My Navigation Bar guide
+-C:\Users\jc\Downloads\Projects\Practice\FrontEnd Mentor\clipboard-landing-page-master
+-C:\Users\jc\Downloads\Projects\Practice\FrontEnd Mentor\project-tracking-intro-component-master\index.html
+-C:\Users\jc\Downloads\Projects\Practice\FrontEnd Mentor\ecommerce-product-page-main\index.html

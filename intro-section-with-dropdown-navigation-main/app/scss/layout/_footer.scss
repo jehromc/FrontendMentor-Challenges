@@ -1,8 +1,8 @@
 @use '../abstracts/' as *;
 
 .attribution a {
-  color: $clr-primary-cyan;
+  color:hsl(0, 0%, 41%);
   &:hover {
-    color: $clr-neutral-dark-blue;
+    color: hsl(0, 3%, 14%);
   }
 }
