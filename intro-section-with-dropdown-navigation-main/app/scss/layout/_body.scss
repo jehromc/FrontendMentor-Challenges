@@ -3,13 +3,52 @@
 body {
   min-height: 100vh;
   font-size: 0.875rem;
-  // display: grid;
-  // grid-template-rows: 1fr;
-  // justify-content: center;
-  // align-items: center;
+  //display: grid;
+  ///grid-template-rows: 1fr;
+  //justify-content:center;
+  //align-items:flex-start;
   font-family: $ff-primary;
 }
+.main {
+  padding: 1rem 0;
+  &__title {
+    text-align: center;
+    padding: 1rem 0 0 0;
+  }
+  &__content {
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__hero__placeholder {
+    display: flex;
+    justify-content: center;
+  }
+}
+.cta {
+  color: white;
+  border-style: none;
+  background: black;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.8rem;
+  &__container {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+  }
+}
 
+.clients {
+  display: flex;
+
+  justify-content: center;
+  &__placeholder {
+    padding: 0 0.7rem;
+  }
+}
 //Footer
 .attribution {
   padding-top: 5px;

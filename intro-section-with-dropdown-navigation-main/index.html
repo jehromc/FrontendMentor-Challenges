@@ -33,37 +33,77 @@
         <a href="#" class="nav__menu--open">
           <img src="images/icon-menu.svg" alt="Open menu" />
         </a>
-        
-        <div class="nav__container"  data-nav-menu>
+        <div class="mobile-backdrop"></div>
+        <div class="nav__container" data-nav-menu>
+          <div class="nav__menu--wrapper">
+            <a href="#" class="nav__menu--close">
+              <img src="images/icon-close-menu.svg" alt="Close menu" />
+            </a>
+          </div>
           <ul class="nav__list--primary">
-            <div class="nav__menu--wrapper">
-              <a href="#" class="nav__menu--close">
-                <img src="images/icon-close-menu.svg" alt="Close menu" />
-              </a>
-            </div>
             <li class="nav__list">
-              <a class="nav__link" href="#">Features</a>
+              <a class="nav__link" href="#">Features </a>  <img src="images/icon-arrow-down.svg" alt="expand menu" />
             </li>
             <li class="nav__list"><a class="nav__link" href="#">Company</a></li>
             <li class="nav__list"><a class="nav__link" href="#">Careers</a></li>
             <li class="nav__list"><a class="nav__link" href="#">About</a></li>
+
+            <ul class="nav__list--secondary">
+              <li class="nav__list"><a class="nav__link" href="#">Login</a></li>
+              <li class="nav__list nav__list--register">
+                <a class="nav__link nav__link--register" href="#">Register</a>
+              </li>
+            </ul>
           </ul>
         </div>
-        <!-- <ul class="nav__list--secondary">
-          <li class="nav__list"><a class="nav__link" href="#">Login</a></li>
-          <li class="nav__list"><a class="nav__link" href="#">Register</a></li>
-        </ul> -->
       </nav>
     </header>
-    <main>
-      <h1>Make remote work</h1>
-      <p>
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <button>Learn more</button>
+    <main class="main">
+      <div class="main__hero__placeholder">
+        <img
+          src="/intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png"
+          alt="man using  laptop"
+        />
+      </div>
+      <div class="main__container">
+        <h1 class="main__title">Make remote work</h1>
+        <p class="main__content">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <div class="cta__container">
+          <button class="cta">Learn more</button>
+        </div>
+      </div>
     </main>
-
+    <section>
+      <div class="clients">
+        <div class="clients__placeholder">
+          <img
+            src="/intro-section-with-dropdown-navigation-main/images/client-databiz.svg"
+            alt="man using  laptop"
+          />
+        </div>
+        <div class="clients__placeholder">
+          <img
+            src="/intro-section-with-dropdown-navigation-main/images/client-audiophile.svg"
+            alt="man using  laptop"
+          />
+        </div>
+        <div class="clients__placeholder">
+          <img
+            src="/intro-section-with-dropdown-navigation-main/images/client-meet.svg"
+            alt="man using  laptop"
+          />
+        </div>
+        <div class="clients__placeholder">
+          <img
+            src="/intro-section-with-dropdown-navigation-main/images/client-maker.svg"
+            alt="man using  laptop"
+          />
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="attribution">
         Challenge by
