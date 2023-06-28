@@ -41,10 +41,51 @@
             </a>
           </div>
           <ul class="nav__list--primary">
-            <li class="nav__list">
-              <a class="nav__link" href="#">Features </a>  <img src="images/icon-arrow-down.svg" alt="expand menu" />
+            <li class="nav__list nav__list-features">
+              <div class="nav__link-features-placeholder">
+                <a class="nav__link nav__link-features" href="#">Features </a>
+                <a class="nav__link-features" data-arrow-down href="#"
+                  ><div class="nav__link-features-img nav__arrow--down">
+                    <img
+                      src="images/icon-arrow-down.svg"
+                      alt="expand menu"
+                    /></div
+                ></a>
+                <a
+                  class="nav__link-features nav__arrow--up arrow--hidden"
+                  data-arrow-up
+                  href="#"
+                  ><div class="nav__link-features-img">
+                    <img
+                      src="images/icon-arrow-up.svg"
+                      alt="expand menu"
+                    /></div
+                ></a>
+              </div>
+
+              <div
+                class="nav__list__sub-container nav__list__sub-container-hide"
+                data-sub-list
+              >
+                <ul class="nav__list nav__list--secondary-sub">
+                  <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">Todo List</a>
+                  </li>
+                  <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">Calendar</a>
+                  </li>
+                  <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">Reminders</a>
+                  </li>
+                  <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">Planning</a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
             <li class="nav__list"><a class="nav__link" href="#">Company</a></li>
+
             <li class="nav__list"><a class="nav__link" href="#">Careers</a></li>
             <li class="nav__list"><a class="nav__link" href="#">About</a></li>
 

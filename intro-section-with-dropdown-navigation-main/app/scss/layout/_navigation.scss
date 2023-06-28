@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
   padding: 0.5rem;
   position: relative;
 
@@ -38,11 +37,9 @@
       border: 1px solid black;
       border-radius: 0.7rem;
       @include media-query(large) {
-       // text-align: center;
-      //  padding: 0 1rem 0 0;
-      margin: 0 1rem;
-
-
+        // text-align: center;
+        //  padding: 0 1rem 0 0;
+        margin: 0 1rem;
       }
     }
   }
@@ -90,6 +87,38 @@
     }
   }
 }
+
+//Features Sub Menu
+.nav__link-features-placeholder {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.nav__list--secondary-sub {
+  padding: 0.5rem 0 0 1rem;
+}
+.nav__list-sub {
+  padding: 0.2rem 0;
+}
+
+.nav__list__sub-container-hide {
+  visibility: hidden;
+  height: 0;
+}
+
+.arrow--hidden {
+  display: none;
+}
+
+// .nav__arrow--hide {
+//   display: none;
+// }
+// .nav__arrow--show {
+//   display: block;
+// }
+// .nav__arrow--up {
+//   display: none;
+// }
 
 .mobile-backdrop {
   background: rgba(0, 0, 0, 0.8);
