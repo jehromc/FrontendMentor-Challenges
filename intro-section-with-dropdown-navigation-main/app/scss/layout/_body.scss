@@ -3,30 +3,82 @@
 body {
   min-height: 100vh;
   font-size: 0.875rem;
-  //display: grid;
-  ///grid-template-rows: 1fr;
-  //justify-content:center;
-  //align-items:flex-start;
   font-family: $ff-primary;
 }
 .main {
   padding: 1rem 0;
+  max-width: 70rem;
+  @include media-query(large) {
+    display: grid;
+    //align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__section {
+    @include media-query(large) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  @include media-query(large) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   &__title {
     text-align: center;
     padding: 1rem 0 0 0;
+    @include media-query(large) {
+      font-size: 4rem;
+      text-align: left;
+    }
   }
   &__content {
     text-align: center;
     padding: 1rem 1rem;
+    @include media-query(large) {
+      text-align: left;
+      //font-size: 1rem;
+      max-width: 80%;
+    }
   }
   &__container {
     display: flex;
     flex-direction: column;
+    @include media-query(large) {
+      align-items: flex-start;
+      gap: 2rem;
+
+    }
   }
   &__hero__placeholder {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
   }
+
+  &__hero--mobile {
+    display: block;
+    @include media-query(large) {
+      display: none;
+    }
+  }
+  &__hero--desktop {
+    display: none;
+    @include media-query(large) {
+      display: block;
+      max-width: 80%;
+  
+
+      margin: 0 auto;
+    }
+  }
+}
+
+.clients {
+  padding: 2.5rem 0;
 }
 .cta {
   color: white;
@@ -45,6 +97,8 @@ body {
   display: flex;
 
   justify-content: center;
+  @include media-query(large) {
+  }
   &__placeholder {
     padding: 0 0.7rem;
   }

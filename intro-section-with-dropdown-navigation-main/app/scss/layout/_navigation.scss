@@ -16,6 +16,8 @@
     gap: 1rem;
     @include media-query(large) {
       display: flex;
+      gap: 1rem;
+      padding: 0 1rem;
     }
   }
   &__list--secondary {
@@ -24,22 +26,36 @@
     gap: 0.6rem;
     padding: 0 2rem;
     text-align: center;
+    &-login {
+      padding: 0 1rem;
+      margin:0  1rem;
+ 
+    }
     @include media-query(large) {
       flex-direction: row;
-      padding: 0 1rem;
+      padding: 0 2rem;
     }
   }
+
   &__list {
     list-style: none;
     padding: 0.6rem 0;
+    @include media-query(large) {
+      padding: 1 2rem;
+      margin: 0 0.5rem;
+
+    }
 
     &--register {
       border: 1px solid black;
       border-radius: 0.7rem;
       @include media-query(large) {
-        // text-align: center;
-        //  padding: 0 1rem 0 0;
-        margin: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+
+        // margin: 0 1rem;
       }
     }
   }
@@ -48,6 +64,9 @@
     display: flex;
     justify-content: right;
     padding: 1rem 0.5rem 0.5rem 0;
+    @include media-query(large) {
+      display: none;
+    }
   }
   &__menu--open {
     @include media-query(large) {
@@ -71,14 +90,16 @@
     padding: 1rem 2rem 1rem 1rem;
     animation: slide-in 0.3s ease-in;
     @include media-query(large) {
-      display: block;
+      //display: block;
       position: relative;
-      width: auto;
+      width: 100%;
       height: auto;
-      padding: 1rem;
-      align-self: flex-start;
+      padding: 0 1rem;
+      //align-self: flex-start;
       animation: none;
       display: flex;
+      justify-content: space-between;
+
       top: 0;
     }
 
@@ -96,6 +117,9 @@
 }
 .nav__list--secondary-sub {
   padding: 0.5rem 0 0 1rem;
+  @include media-query(large) {
+    padding: 0;
+  }
 }
 .nav__list-sub {
   padding: 0.2rem 0;
@@ -109,16 +133,38 @@
 .arrow--hidden {
   display: none;
 }
+//set  icons and link label position
 
-// .nav__arrow--hide {
-//   display: none;
-// }
-// .nav__arrow--show {
-//   display: block;
-// }
-// .nav__arrow--up {
-//   display: none;
-// }
+.nav__links-icon-img {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nav__list__sub-container-features {
+  @include media-query(large) {
+    position: absolute;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.29);
+    left: -2rem;
+    top: 4rem;
+  }
+}
+.nav__list__sub-container-company {
+  @include media-query(large) {
+    position: absolute;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.29);
+    left: 9rem;
+    top: 4rem;
+  }
+}
+
+//add dark background  when user click menu
 
 .mobile-backdrop {
   background: rgba(0, 0, 0, 0.8);

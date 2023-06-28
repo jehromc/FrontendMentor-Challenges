@@ -40,6 +40,8 @@
               <img src="images/icon-close-menu.svg" alt="Close menu" />
             </a>
           </div>
+          
+
           <ul class="nav__list--primary">
             <li class="nav__list nav__list-features">
               <div class="nav__link-features-placeholder">
@@ -52,7 +54,7 @@
                     /></div
                 ></a>
                 <a
-                  class="nav__link-features nav__arrow--up arrow--hidden"
+                  class="nav__link-features arrow--hidden"
                   data-arrow-up
                   href="#"
                   ><div class="nav__link-features-img">
@@ -64,50 +66,145 @@
               </div>
 
               <div
-                class="nav__list__sub-container nav__list__sub-container-hide"
+                class="nav__list__sub-container nav__list__sub-container-features      nav__list__sub-container-hide"
                 data-sub-list
               >
                 <ul class="nav__list nav__list--secondary-sub">
                   <li class="nav__list-sub">
-                    <a class="nav__link nav__link-sub" href="#">Todo List</a>
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <div>
+                          <img src="images/icon-todo.svg" alt="todo" />
+                        </div>
+                        <span>Todo List</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <div>
+                          <img src="images/icon-calendar.svg" alt="calendar" />
+                        </div>
+                        <span>Calendar</span>
+                      </div>
+                    </a>
                   </li>
                   <li class="nav__list-sub">
-                    <a class="nav__link nav__link-sub" href="#">Calendar</a>
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <div>
+                          <img
+                            src="images/icon-reminders.svg"
+                            alt="Reminders"
+                          />
+                        </div>
+                        <span>Reminders</span>
+                      </div>
+                    </a>
                   </li>
                   <li class="nav__list-sub">
-                    <a class="nav__link nav__link-sub" href="#">Reminders</a>
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <div>
+                          <img src="images/icon-planning.svg" alt="Planing" />
+                        </div>
+                        <span>Planning</span>
+                      </div>
+                    </a>
                   </li>
+              </div>
+            </li>
+            <!-- Company Sub Menu -->
+            <li class="nav__list nav__list-features">
+              <div class="nav__link-features-placeholder">
+                <a class="nav__link nav__link-features" href="#">Company </a>
+                <a class="nav__link-features" data-arrow-down-company href="#"
+                  ><div class="nav__link-features-img nav__arrow--down">
+                    <img
+                      src="images/icon-arrow-down.svg"
+                      alt="expand menu"
+                    /></div
+                ></a>
+                <a
+                  class="nav__link-features arrow--hidden"
+                  data-arrow-up-company
+                  href="#"
+                  ><div class="nav__link-features-img">
+                    <img
+                      src="images/icon-arrow-up.svg"
+                      alt="expand menu"
+                    /></div
+                ></a>
+              </div>
+
+              <div
+                class="nav__list__sub-container 
+                nav__list__sub-container-company 
+                nav__list__sub-container-hide"
+                data-sub-list-company
+              >
+                <ul class="nav__list nav__list--secondary-sub">
                   <li class="nav__list-sub">
-                    <a class="nav__link nav__link-sub" href="#">Planning</a>
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <span>History</span>
+                      </div>
+                    </a>
+                  </li>
+                    <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <span>Our  Team</span>
+                      </div>
+                    </a>
+                  </li>
+                    <li class="nav__list-sub">
+                    <a class="nav__link nav__link-sub" href="#">
+                      <div class="nav__links-icon-img">
+                        <span>Blog</span>
+                      </div>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
-
-            <li class="nav__list"><a class="nav__link" href="#">Company</a></li>
+            <!-- End of Company Sub Menu -->
 
             <li class="nav__list"><a class="nav__link" href="#">Careers</a></li>
             <li class="nav__list"><a class="nav__link" href="#">About</a></li>
 
+          
+          </ul>
             <ul class="nav__list--secondary">
-              <li class="nav__list"><a class="nav__link" href="#">Login</a></li>
+              <li class="nav__list nav__list--secondary-login"><a class="nav__link" href="#">Login</a></li>
               <li class="nav__list nav__list--register">
                 <a class="nav__link nav__link--register" href="#">Register</a>
               </li>
             </ul>
-          </ul>
         </div>
       </nav>
+
+
+
+      
     </header>
     <main class="main">
       <div class="main__hero__placeholder">
-        <img
+        <img class=" main__hero--mobile"
           src="/intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png"
           alt="man using  laptop"
         />
+          <img class="main__hero--desktop"
+          src="/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png"
+          alt="man using 
+           laptop"
+        />
       </div>
+      <section class="main__section">
       <div class="main__container">
-        <h1 class="main__title">Make remote work</h1>
+        <h1 class="main__title">Make remote work  </h1>
         <p class="main__content">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
@@ -116,8 +213,8 @@
           <button class="cta">Learn more</button>
         </div>
       </div>
-    </main>
-    <section>
+ 
+    
       <div class="clients">
         <div class="clients__placeholder">
           <img
@@ -142,9 +239,11 @@
             src="/intro-section-with-dropdown-navigation-main/images/client-maker.svg"
             alt="man using  laptop"
           />
+          
         </div>
       </div>
     </section>
+   </main>
     <footer>
       <div class="attribution">
         Challenge by
