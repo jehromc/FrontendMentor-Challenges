@@ -27,19 +27,32 @@
   <body>
     <header>
       <nav class="nav">
-        <ul class="nav__list--primary">
-          <a href="#">
-            <img src="images/logo.svg" alt="Go to Homepage" />
-          </a>
-          <li class="nav__list"><a class="nav__link" href="#">Features</a></li>
-          <li class="nav__list"><a class="nav__link" href="#">Company</a></li>
-          <li class="nav__list"><a class="nav__link" href="#">Careers</a></li>
-          <li class="nav__list"><a class="nav__link" href="#">About</a></li>
-        </ul>
-        <ul class="nav__list--secondary">
+        <a href="#">
+          <img src="images/logo.svg" alt="Go to Homepage" />
+        </a>
+        <a href="#" class="nav__menu--open">
+          <img src="images/icon-menu.svg" alt="Open menu" />
+        </a>
+        
+        <div class="nav__container"  data-nav-menu>
+          <ul class="nav__list--primary">
+            <div class="nav__menu--wrapper">
+              <a href="#" class="nav__menu--close">
+                <img src="images/icon-close-menu.svg" alt="Close menu" />
+              </a>
+            </div>
+            <li class="nav__list">
+              <a class="nav__link" href="#">Features</a>
+            </li>
+            <li class="nav__list"><a class="nav__link" href="#">Company</a></li>
+            <li class="nav__list"><a class="nav__link" href="#">Careers</a></li>
+            <li class="nav__list"><a class="nav__link" href="#">About</a></li>
+          </ul>
+        </div>
+        <!-- <ul class="nav__list--secondary">
           <li class="nav__list"><a class="nav__link" href="#">Login</a></li>
           <li class="nav__list"><a class="nav__link" href="#">Register</a></li>
-        </ul>
+        </ul> -->
       </nav>
     </header>
     <main>
