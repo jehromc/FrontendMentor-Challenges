@@ -11,6 +11,10 @@ export default defineConfig({
           'product-preview-card-component-main/index.html'
         ),
         qrCode: resolve(__dirname, 'qr-code-component-main/index.html'),
+        introSection: resolve(
+          __dirname,
+          'intro-section-with-dropdown-navigation-main/index.html'
+        ),
       },
     },
   },
